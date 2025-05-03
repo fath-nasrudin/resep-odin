@@ -20,6 +20,10 @@ body {
   padding-inline: 16px;
 }
 
+.text-accent {
+  color: rgb(223, 100, 0);
+}
+
 .header {
   display: flex;
   width: 100%;
@@ -108,4 +112,40 @@ body {
 
 .hero-text-accent {
   color: rgb(223, 100, 0);
+}
+
+/* cook section */
+.cook-section {
+  padding-block: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.cook-section h2 {
+  font-size: 2rem;
+}
+
+.cooknav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.cooknav-item {
+  padding: 4px 20px;
+  background-color: rgb(240, 240, 240);
+  color: rgb(39, 39, 39);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cooknav-item.active {
+  background-color: black;
+  color: white;
 }
