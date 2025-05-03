@@ -17,6 +17,7 @@ body {
 
 .container {
   max-width: 1024px;
+  padding-inline: 16px;
 }
 
 .header {
@@ -83,8 +84,28 @@ body {
   text-decoration: none;
 }
 
+.hero {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 3 / 1;
+}
+
 /* hero */
 .hero-image {
   width: 100%;
   height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  color: black;
+  font-size: 3rem;
+  font-weight: 900;
+  left: 64px;
+  top: 64px;
+}
+
+.hero-text-accent {
+  color: rgb(223, 100, 0);
 }
