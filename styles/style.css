@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1024px;
+  padding-inline: 16px;
+}
+
+.text-accent {
+  color: rgb(223, 100, 0);
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-block: 16px;
+  align-items: center;
+}
+
+.logo a {
+  font-weight: 900;
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo-accent {
+  color: rgb(223, 100, 0);
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+  font-size: 0.875rem;
+  color: rgb(39, 39, 39);
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
+}
+
+.nav a.active {
+  font-weight: 700;
+}
+
+.header-right {
+  display: flex;
+  gap: 8px;
+}
+
+.searchbox {
+  font-size: 0.875rem;
+  background-color: rgb(216, 216, 216);
+  color: rgb(78, 78, 78);
+  padding-block: 4px;
+  padding-inline: 8px;
+  width: 124px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  background-color: black;
+  color: white;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 3 / 1;
+}
+
+/* hero */
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  color: black;
+  font-size: 3rem;
+  font-weight: 900;
+  left: 64px;
+  top: 64px;
+}
+
+.hero-text-accent {
+  color: rgb(223, 100, 0);
+}
+
+/* cook section */
+.cook-section {
+  padding-block: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.cook-section h2 {
+  font-size: 2rem;
+}
+
+.cooknav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.cooknav-item {
+  padding: 4px 20px;
+  background-color: rgb(240, 240, 240);
+  color: rgb(39, 39, 39);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cooknav-item.active {
+  background-color: black;
+  color: white;
+}
+
+/* menu section */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  gap: 16px;
+}
+
+.card {
+  flex: 0 0 250px;
+  background-color: rgb(240, 240, 240);
+  padding: 16px;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.card-image {
+  border-radius: 4px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1.2;
+  position: relative;
+}
+
+.card-image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-button {
+  color: white;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 4px 16px;
+  border-radius: 8px;
+}
+
+.footer {
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background-color: black;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(223, 100, 0);
+}
+
+/* Note warning */
+.warning-note {
+  padding: 8px 16px;
+  border-radius: 16px;
+  background-color: rgba(255, 123, 0, 0.274);
+  margin-block: 16px;
+}
